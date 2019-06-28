@@ -13,7 +13,6 @@ import matplotlib.pyplot as plt
 from googlemaps import Client
 from geopy.geocoders import GoogleV3
 key= "YOUR_API_KEY"
-eq = pd.read_csv("earthquakes.csv")
 locations = pd.read_excel('YOUR_LOCATIONS') 
 separator = ", "
 locations["google"] = locations["Street Address"].map(str) + separator + locations["City"]
